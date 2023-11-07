@@ -1,0 +1,24 @@
+.slides-table {
+	float: left; width: 100%; position: relative;
+	.slide {
+		float: left; display: flex; align-items: center;
+		.image {
+			width: 45px; height: 45px; background: #F0F0F0;
+			border-radius: 100%; flex: 0 0 45px; margin-right: 10px;
+			background-size: cover; background-position: center;
+			background-repeat: no-repeat;
+		}
+		.slide-name {
+			margin-bottom: 5px; display: block;
+		}
+		.slideshow-name {
+			color: #B3B8BF; font-size: 12px; font-weight: 300;
+		}
+	}
+	.message {
+		color: #B3B8BF; font-size: 12px; font-weight: 300;
+	}
+	.table-wrapper table tr.tbl-header th:last-child {
+		width: auto;
+	}
+}

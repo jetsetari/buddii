@@ -1,0 +1,23 @@
+.slideshow {
+	background: #FFFFFF; border-radius: 12px; padding: 10px;
+	box-shadow: 2px 28px 54px rgba(171, 171, 180, 0.180944);
+	.s-image {
+		background: #F7F7F7; width: 100%; padding-top: 70%;
+		border-radius: 12px; background-size: cover; 
+		background-repeat: no-repeat; background-position: center;
+		position: relative;
+	}
+	.s-description {
+		width: 100%; padding-top: 10px;
+		.title {
+			font-family: var(--f-mainfont); font-style: normal; font-weight: 500; 
+			font-size: 14px; line-height: 25px; color: #040415; display: block;
+			margin-bottom: 5px;
+		}
+		.description {
+			font-family: var(--f-secfont); font-style: normal; font-weight: normal; 
+			font-size: 12px; line-height: 16px; color: #BCBCBC;
+		}
+	}
+
+}

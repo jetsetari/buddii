@@ -1,0 +1,18 @@
+#users {
+	float: left; width: 100%;
+	.user {
+		float: left; display: flex; align-items: center;
+		.avatar {
+			width: 45px; height: 45px; background: #F0F0F0;
+			border-radius: 100%; flex: 0 0 45px; margin-right: 10px;
+			background-size: cover; background-position: center;
+			background-repeat: no-repeat;
+		}
+		.user-name {
+			margin-bottom: 5px; display: block;
+		}
+		.user-email {
+			color: #B3B8BF; font-size: 12px; font-weight: 300;
+		}
+	}
+}

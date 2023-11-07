@@ -1,0 +1,40 @@
+.user-edit {
+	.Dropdown-root {
+		height: 50px;
+	}
+	.half {
+		width: 50%; float: left;
+		&:first-child {
+			padding-right: 10px;
+		}
+	}
+	.description {
+		font-size: 14px !important; display: block; 
+		margin-bottom: 15px; font-style: italic;
+	}
+	.user-edit-main {
+		display: flex; float: left; width: 100%;
+		margin-bottom: 20px;
+		.user-edit-upload {
+			width: 190px; border-radius: 14px; flex: 0 0 190px;
+			background: #f9f9f9 url('./images/btn-upload.svg') center no-repeat; 
+			position: relative; overflow: hidden; cursor: pointer;
+			.user-avatar {
+				background-size: cover; background-position: center;
+				background-repeat: no-repeat; position: absolute;
+				left: 0px; right: 0px; top: 0px; bottom: 0px;
+				transition: all 0.5s ease; -webkit-transition: all 0.5s ease;
+			}
+			&:hover .user-avatar {
+				opacity: 0.2;
+			}
+		}
+		.user-edit-details {
+			padding-left: 20px;
+			#in-phone-number {
+				margin-bottom: 0px;
+			}
+		}
+	}
+	
+}

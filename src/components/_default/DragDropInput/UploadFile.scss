@@ -1,0 +1,23 @@
+.upload-file {
+	width: 100%; float: left; padding: 10px; display: flex;
+    background: #FAFBFC; font-size: 10px; width: 100%;
+    border-radius: 12px; margin-bottom: 20px; align-items: center;
+    &.active {
+		background: #edf0f3;
+    }
+    p {
+    	margin-bottom: 5px;
+    }
+    .input-image {
+        float: left; width: 60px; height: 60px; 
+        margin-right: 10px; background-color: #e5e5e5; 
+        border-radius: 8px; background-size: cover;
+        background-repeat: no-repeat; position: relative;
+        background-position: center;
+    }
+    .btn-upload {
+        border: none; background: transparent; font-family: 'Metropolis'; 
+        font-weight: 400; padding: 5px 10px; background: #18cfd9; font-size: 11px; 
+        border-radius: 6px; color: #FFF;
+    }
+}

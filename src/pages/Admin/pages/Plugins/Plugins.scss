@@ -1,0 +1,17 @@
+#plugins {
+  width: 100%; float: left;
+  .plugin-list {
+    display: grid; column-gap: 10px; row-gap: 10px;
+    .plugin {
+      background: #FFFFFF; border-radius: 10px;
+      box-shadow: 2px 28px 54px rgba(171, 171, 180, 0.180944);
+      padding: 20px;
+      .btn-manage {
+        padding: 16px; text-align: left; cursor: pointer; 
+        font-size: 14px; font-family: var(--f-mainfont); font-weight: 400; 
+        border: none; color: var(--c-white); background: var(--c-main-green); 
+        border-radius: 11px; float: right;
+      }
+    }
+  }
+}

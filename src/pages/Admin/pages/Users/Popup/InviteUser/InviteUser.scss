@@ -1,0 +1,11 @@
+.user-add {
+	.Dropdown-root {
+		height: 50px;
+	}
+	.half {
+		width: 50%; float: left;
+		&:first-child {
+			padding-right: 10px;
+		}
+	}
+}

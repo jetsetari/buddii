@@ -1,0 +1,11 @@
+.input.search {
+	position: relative;
+	.search-input {
+		height: 55px; font-family: var(--f-secfont); font-style: normal; font-weight: 600; 
+		font-size: 13px; line-height: 20px; color: #808191; border-radius: 12px;
+		flex: 0 0 55px;
+	}
+	.search-icon {
+		position: absolute; right: 20px; top: 16px;
+	}
+}

@@ -1,0 +1,20 @@
+.tickbox-wrapper {
+    .tickbox {
+        -webkit-appearance: none; appearance: none; display: inline-block; 
+        width: 22px; height: 22px; padding: 0px; background-clip: content-box; 
+        border: 1.5px solid #ADBBD4; border-radius: 8px; background-color: var(--c-white); 
+        margin-left: 0px; margin-right: 0px; cursor: pointer; overflow: hidden;
+        position: relative;
+    }
+    .tickbox input[type=checkbox] {
+        visibility: hidden;
+    }
+    .tickbox-checked {
+        width: 22px; height: 22px; background-color: #6837FA; position: absolute;
+        background: #6837FA url('./images/check.svg') center center no-repeat;
+        background-size: 10px;
+    }
+    label {
+        margin-bottom: 0px;
+    }
+}

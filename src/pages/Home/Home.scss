@@ -1,0 +1,105 @@
+#home {
+	width: 100%; float: left; padding: 0px; display: flex;
+	.btn-add {
+		width: 110px; height: 110px; background: url('./images/btn-add.svg') center center no-repeat;
+		background-size: cover; position: fixed; bottom: 20px; right: 20px;
+		z-index: 80000; cursor: pointer;
+	}
+	.calendar-side {
+		width: 420px; padding: 20px; flex: 0 0 420px;
+		.a-actions {
+			float: left; width: 100%; margin-bottom: 10px;
+			display: flex;
+			.Dropdown-root.small-dropdown {
+				width: 170px;
+			}
+			button {
+				margin-left: auto 
+			}
+		}
+		.appointments {
+			width: 100%; float: left; margin-bottom: 10px;
+			.a-calendar {
+				padding: 20px 20px 10px 20px; background: #FAFAFA;
+				border-radius: 16px; width: 100%; float: left;
+			}
+		}
+	}
+	.slideshows-side {
+		width: 100%; padding: 20px; padding-left: 0px; 
+		.slideshows-actions {
+			float: left; width: 100%; display: flex; align-items: center;
+			margin-bottom: 20px;
+			.search {
+				width: 315px; margin-right: 20px;
+				input {
+					margin-bottom: 0px;
+				}
+			}
+			.sort-by {
+				margin-left: auto 
+			}
+		}
+		.slideshows {
+			display: grid; grid-template-columns: 1fr 1fr 1fr;
+			column-gap: 20px; row-gap: 20px; float: left;
+			width: 100%;
+		}
+	}
+	&.empty {
+		.calendar-side {
+			.appointment .a-time span {
+				color: #b3b9c200; background: #e6e6e6;
+			}
+			.appointment .a-box { 
+				.a-picture {
+					background-image: none !important;
+				}
+				.a-client * {
+					color: #b3b9c200; background: #e6e6e6;
+				}
+			}
+			.tickbox-wrapper .tickbox * {
+				opacity: 0;
+			}
+		}
+		.slideshows-side {
+			.slideshow {
+				.s-image {
+					background-image: none !important;
+					* {
+						opacity: 0;
+					}
+				}
+				.s-description * {
+					color: #b3b9c200; background: #f2f2f2;
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width: 1200px) {
+	#home .slideshows-side .slideshows {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (max-width: 980px) {
+	#home .slideshows-side .slideshows {
+		grid-template-columns: 1fr;
+	}
+}
+@media screen and (min-width: 1600px) {
+	#home .slideshows-side .slideshows {
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+@media screen and (min-width: 1900px) {
+	#home .slideshows-side .slideshows {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+}
+@media screen and (min-width: 2400px) {
+	#home .slideshows-side .slideshows {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+}

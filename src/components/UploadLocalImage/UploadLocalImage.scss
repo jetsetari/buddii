@@ -1,0 +1,51 @@
+.upload-localimage {
+	width: 100%; float: left; padding: 20px;
+    background: #FAFBFC; font-size: 10px; width: 100%;
+    border-radius: 12px;
+    &.active {
+		background: #edf0f3;
+    }
+    p {
+    	margin-bottom: 10px;
+    }
+    .input-image {
+        float: left; width: 60px; height: 60px; 
+        margin-right: 10px; background-color: #e5e5e5; 
+        border-radius: 8px; background-size: cover;
+        background-repeat: no-repeat; position: relative;
+        background-position: center;
+    }
+
+    .generated-file {
+        width: 200px; height: 130px; background-color: #CECECE; 
+        background-size: cover; background-repeat: no-repeat; 
+        background-position: center; border-radius: 9px; float: left; 
+        margin-right: 25px;
+    }
+    .upload-frame {
+        float: left; width: 100%; background: #ced6df; padding: 17px; 
+        font-size: 11px; border-radius: 12px; display: flex; 
+        align-items: center; margin-bottom: 20px;
+    }
+    .upload-preview {
+        width: 60px; height: 60px; float: left; background: #FFF; 
+        margin-right: 15px; border-radius: 12px; background-size: cover; 
+        background-repeat: no-repeat; background-position: center;
+    }
+    .upload-process {
+        width: 100%; float: left; background: #1acfd9; font-size: 14px; 
+        padding: 10px; text-align: center; border-radius: 9px; color: #FFF; 
+        margin-bottom: 10px;
+    }
+    .upload-slides {
+        width: 100%; background: #eeeeee; padding: 20px; float: left; 
+        border-radius: 9px; display: flex; flex-direction: row; 
+        align-items: center;
+        ol {
+            float: left; font-size: 14px; line-height: 17px;
+        }
+    }
+    #image {
+        position: absolute; visibility: hidden;
+    }
+}

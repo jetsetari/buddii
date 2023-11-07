@@ -1,0 +1,12 @@
+#invoices {
+	float: left; width: 100%;
+	.status {
+		padding: 7px 12px; border-radius: 80px; font-style: 11px;
+		&.paid {
+			background-color: #E6DAFB; color: #A36EFD;
+		}
+		&.due {
+			background-color: #FBDADA; color: #FD6E6E;
+		}
+	}
+}

@@ -1,0 +1,39 @@
+#admin #company {
+	float: left; width: 100%; 
+	.form {
+		grid-template-columns: repeat(2, 1fr);
+		display: grid; gap: 10px 20px; float: left;
+		margin-bottom: 30px; width: 100%;
+		.upload-wrapper {
+			position: relative; width: 100%;
+			.btn-upload {
+				height: 40px; font-family: var(--f-secfont); 
+				font-size: 14px; border-radius: 8px; text-align: center; color: #FFF; 
+				position: absolute; right: 10px; bottom: 27px; display: flex; 
+				justify-content: center; align-items: center; padding: 0 30px;
+				cursor: pointer; padding-left: 45px;
+				background: #19CFD9 url('../../../../assets/images/icons/upload.svg') left 15px center no-repeat;
+			}
+		}
+		.upload-image {
+			width: 100%; display: flex; 
+			.company-image {
+				width: 120px; height: 120px; background-color: #F0F0F0;
+				float: left; margin-right: 20px; border-radius: 9px;
+				margin-bottom: 20px; background-size: cover;
+				background-position: center; background-repeat: no-repeat;
+				flex: 0 0 120px;
+			}
+		}
+	}
+	.Dropdown-root {
+		height: 55px; background: #f9f9f9;
+	}
+	label.label-tickbox {
+		float: left; width: 100%;
+		span {
+			float: left; line-height: 20px; text-indent: 5px; 
+			margin-bottom: 15px; cursor: pointer;
+		}
+	}
+}

@@ -1,0 +1,21 @@
+.timer {
+	position: absolute; top: 0px; left: 0px; font-size: 10px;
+	background: #1c1d21; padding: 5px 10px;
+	.current-client {
+		float: left; width: 35px; height: 35px; border-radius: 100%;
+		background-size: cover; margin-right: 10px; border: 1px solid #FFF;
+	}
+	.timer-wrapper {
+		float: left;
+	}
+	.client-name {
+		color: #FFF; margin-bottom: 3px; padding-top: 5px;
+		float: left; width: 100%;
+	}
+	svg {
+		float: left; margin-right: 5px; cursor: pointer;
+	}
+	.seconds {
+		color: #909090; float: left; margin-top: 4px;
+	}
+}

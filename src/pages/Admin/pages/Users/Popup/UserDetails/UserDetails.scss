@@ -1,0 +1,38 @@
+.user-details {
+	width: 100%; float: left; 
+	.user-header {
+		width: 100%; float: left; margin-bottom: 30px;
+		display: flex; align-items: center;
+		.user-avatar {
+			background-size: cover; background-position: center;
+			background-repeat: no-repeat; border-radius: 100%;
+			width: 75px; height: 75px; float: left; 
+			background-color: #F0F0F0;
+		}
+		.user-subheader {
+			width: calc(100% - 75px); padding-left: 20px;
+			.user-name {
+				font-weight: 600; font-size: 28px; display: block;
+				line-height: 29px; color: #040415;
+			}
+			.user-email {
+				font-weight: 500; font-size: 12px; 
+				line-height: 12px; color: #BCBCBC;
+			}
+		}
+	}
+	.user-details {
+		float: left; width: 100%;
+		.user-line {
+			width: 50%; float: left; margin-bottom: 15px;
+			strong {
+				font-weight: 600; font-size: 12px; display: block;
+				line-height: 24px; color: #040415;
+			}
+			span {
+				font-weight: 600; font-size: 12px; 
+				line-height: 16px; color: #BCBCBC;
+			}
+		}
+	}
+}

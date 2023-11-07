@@ -1,0 +1,25 @@
+.wrapper.registration.terms {
+  position: relative; justify-content: flex-start;
+  padding-top: 20px;
+  .btn-close {
+    background: var(--c-grey3); border-radius: 40px;  
+    font-family: var(--f-mainfont); font-size: 12px; 
+    line-height: 24px; color: var(--c-main-green); 
+    text-decoration: none; padding: 10px 16px; position: absolute; 
+    right: 30px; top: 30px;
+    transition: all 0.5s ease; -webkit-transition: all 0.5s ease;
+    &:hover {
+      background: var(--c-main-green-hover);
+      color: var(--c-grey3);
+    }
+  }
+  span {
+    font-family: var(--f-mainfont); font-weight: 600; 
+    font-size: 16px; line-height: 24px; color: var(--c-sec-black);
+  }
+  p {
+    font-family: var(--f-mainfont); font-size: 16px; line-height: 24px; 
+    color: var(--c-sec-black); margin-top: 10px; max-width: 680px;
+  }
+
+}

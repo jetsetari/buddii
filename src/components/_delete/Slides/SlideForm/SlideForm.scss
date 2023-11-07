@@ -1,0 +1,174 @@
+.slideform_container {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+  height: 100vh;
+  z-index: 2;
+  background: rgba(0, 0, 0, .5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .slideform_content {
+    background-color: var(--c-white);
+    width: 680px;
+    padding: 30px;
+    border-radius: 16px;
+    display: flex;
+    flex-flow: column;
+
+    .slideform_uploads {
+      display: flex;
+      gap: 250px;
+
+      .slideform_label {
+        width: 90px;
+      }
+    }
+
+      .slideform_header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .slideform_header_title {
+          font-family: var(--f-mainfont);
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 24px;
+          color: #040415;
+        }
+
+        .slideform_header_close {
+          padding: 20px;
+          background-color: var(--c-white);
+          border-radius: 40px;
+          line-height: 0;
+          box-shadow: 10px 12px 50px rgba(231, 231, 231, 0.86);
+          cursor: pointer;
+
+          &:hover {
+            background-color: var(--c-grey1);
+        }
+      }
+    }
+
+    .slideform_button_next {
+      width: 100%;
+      text-align: center;
+      background-color: var(--c-main-green);
+      padding: 20px 0;
+      color: var(--c-white);
+      font-family: var(--f-secfont);
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      border-radius: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: var(--c-main-green-hover);
+      }
+    }
+
+    .slideform_buttons {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 30px;
+
+      .slideform_button_add {
+        width: 279px;
+        text-align: center;
+        border-radius: 16px;
+        font-weight: bold;
+        font-size: 16px;
+        font-family: var(--f-secfont);
+        line-height: 20px;
+        border: 1px solid var(--c-grey5);
+        color: var(--c-grey5);
+        padding: 20px 0;
+        cursor: pointer;
+
+        &:hover {
+          border: 1px solid var(--c-grey5);
+          color: var(--c-white);
+          background-color: var(--c-grey5);
+        }
+      }
+
+      .slideform_button_next {
+        width: 279px;
+        text-align: center;
+        background-color: var(--c-main-green);
+        padding: 20px 0;
+        color: var(--c-white);
+        font-family: var(--f-secfont);
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 20px;
+        border-radius: 16px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--c-main-green-hover);
+        }
+      }
+    }
+
+    .slideform_label {
+      margin-bottom: 22px;
+      display: block;
+
+      .slideform_label_name {
+        font-family: "Poppins";
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 24px;
+        color: #040415;
+        margin-bottom: 5px;
+      }
+  
+      .slideform_input_big {
+        background: #F8F8F8;
+        border-radius: 8px;
+        border: none;
+        padding: 18px 20px;
+        max-width: 528px;
+        width: 100%;
+      }
+  
+      .slideform_dragdrop {
+        background: #FAFBFC;
+        border-radius: 8px;
+        padding: 25px 140px;
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        gap: 20px;
+
+        .slideform_dragdrop_text {
+          font-family: "Poppins";
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 29px;
+          color: #B0B7C3;
+        }
+      }
+
+      .slideform_grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 14px;
+
+        .slideform_grid_input {
+          background: #F8F8F8;
+          border-radius: 8px;
+          border: none;
+          padding: 18px 20px;
+        }
+      }
+    }
+  }
+}

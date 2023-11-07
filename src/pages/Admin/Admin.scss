@@ -1,0 +1,48 @@
+#admin {
+  display: flex; position: relative;
+  nav.admin-nav {
+    display: flex; flex-flow: column; width: 350px; 
+    padding: 30px; border-right: solid 1px var(--c-grey1); 
+    height: auto; background-color: var(--c-white);
+    h2 {
+      margin-bottom: 20px; font-family: var(--f-mainfont); 
+      font-weight: 600; font-size: 26px; color: var(--c-black);
+    }
+    button {
+      margin-bottom: 5px; padding: 16px; text-align: left; 
+      font-size: 14px; font-family: var(--f-mainfont); 
+      font-weight: 400; border: none; background: #FFF;
+      color: #000;
+      &.active {
+        background: var(--c-main-green); color: var(--c-white);
+      }
+    }
+  }
+  .admin-page {
+    padding: 30px; float: left; width: 100%; position: relative;
+    input[type=submit] {
+      width: auto; padding: 15px 25px;
+    }
+    h1 {
+      font-weight: 600; font-size: 20px; margin-bottom: 25px;
+      line-height: 30px; color: #040415;
+    }
+    h2 {
+      font-weight: 600; font-size: 20px; margin-bottom: 25px;
+      line-height: 26px; color: #040415;
+    }
+    .description {
+      font-size: 12px; color: #B3B8BF; font-weight: 400;
+    }
+    .label {
+      padding: 7px 12px; border-radius: 12px; white-space: nowrap;
+    }
+    #btn-add {
+      padding: 16px; text-align: left; position: absolute;
+      top: 30px; right: 30px; cursor: pointer;
+      font-size: 14px; font-family: var(--f-mainfont); 
+      font-weight: 400; border: none; color: var(--c-white);
+      background: var(--c-main-green); border-radius: 11px;
+    }
+  }
+}

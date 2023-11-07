@@ -1,0 +1,26 @@
+.slide-info {
+	float: left; width: 100%; padding-top: 30px;
+	ul.info-list {
+		float: left; width: 100%; margin-top: 20px;
+		li {
+			float: left; width: 100%; margin-bottom: 5px;
+			display: flex; flex-direction: row; align-items: center;
+			margin-bottom: 15px;
+			.user-image {
+				width: 40px; height: 40px; border-radius: 100%;
+				flex: 0 0 40px;
+			}
+			input[type="text"] {
+				background: transparent; opacity: 1; padding: 0;
+				width: 100%; margin-bottom: 0px; margin: 0 15px;
+				padding: 5px; border: 2px solid #e2e2e2;
+			}
+			input[readonly] {
+				outline: none; border: none;
+			}
+			.btn-delete, .btn-edit {
+				flex: 0 0 30px;
+			}
+		}
+	}
+}

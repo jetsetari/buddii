@@ -1,0 +1,51 @@
+/*########################################
+/#####RESET ELEMENTS
+########################################*/
+* {
+  margin: 0; padding: 0;   padding: 0; border: 0; 
+  font-size: 100%; font: inherit; box-sizing: border-box;
+  vertical-align: baseline;
+}
+ul {
+  list-style: none; list-style-type: none;
+}
+ul li {
+  float: left;
+}
+img, fieldset {
+  border: none;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; margin-bottom: 10px;
+}
+article, aside, details, figcaption, figure, footer, 
+header, hgroup, menu, nav, section {
+  display: block;
+}
+html, body {
+  height: 100%; margin: 0;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote::before, blockquote::after,
+q::before, q::after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+iframe { display: none; }
+#root { height: 100%; margin: 0; }
+
+/*########################################
+/#####FONTS
+########################################*/
+
+
+
+
+
+

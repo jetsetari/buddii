@@ -1,0 +1,23 @@
+.pager {
+	float: right; margin-top: 30px; background: #FFF;
+    border-radius: 12px; padding: 5px 10px; display: flex;
+    align-items: center; border: 1px solid #f5f5f5;
+	.btn-previous {
+		float: left; width: 30px; height: 30px; cursor: pointer;
+		background: url('./images/btn-prev.svg') center center no-repeat;
+	}
+	.btn-next {
+		float: left; width: 30px; height: 30px; cursor: pointer;
+		background: url('./images/btn-next.svg') center center no-repeat;
+	}
+	.page {
+		float: left; width: 25px; height: 25px; border-radius: 100%;
+		font-size: 11px; color: #A7ADB5; display: flex; align-items: center;
+		justify-content: center; margin: 0 3px; background: #f5f5f5;
+		cursor: pointer;
+		&.page-current {
+			background: #19CFD9; color: #FFF;
+			cursor: initial;
+		}
+	}
+}

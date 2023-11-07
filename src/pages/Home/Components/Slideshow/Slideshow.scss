@@ -1,0 +1,80 @@
+.slideshow-wrapper {
+	position: relative;
+	.btn-submenu {
+  		width: 34px; height: 34px; 
+  		background-image: url('./images/btn-submenu.svg');
+  		background-size: 34px 34px; background-position: center;
+  		position: absolute; right: 20px; top: 20px; z-index: 50000;
+  		cursor: pointer;
+  	}
+  	.submenu {
+  		top: 65px; right: 5px;
+  	}
+}
+.slideshow {
+	position: relative;
+	border-radius: 30px; padding: 20px;
+	box-shadow: 2px 28px 54px rgba(171, 171, 180, 0.180944);
+	transition: all 0.5s ease; -webkit-transition: all 0.5s ease;
+	text-decoration: none; cursor: pointer;
+	&:hover {
+    	transform: scale(1.02); text-decoration: none;
+  	}
+  	&.active {
+		border: 3px solid #19CFD9;
+  	}
+  	&:before {
+  		content: ""; position: absolute; left: 10px; right: 10px; 
+  		top: 10px; bottom: 66px; background: url('./images/loading.gif') center center no-repeat; 
+  		background-color: #f0f2f3; border-radius: 12px;
+  	}
+	.s-image {
+		background-color: transparent !important; width: 100%; padding-top: 70%;
+		border-radius: 20px; background-size: cover; 
+		background-repeat: no-repeat; background-position: center;
+		position: relative;
+		.access {
+			width: 30px; height: 30px; border-radius: 100%;
+			background: rgba(0, 0, 0, 0.21); position: absolute;
+			top: 10px; left: 10px; background-position: center;
+			background-repeat: no-repeat;
+			&.public {
+				background-image: url('./images/public.svg');
+			}
+			&.private {
+				background-image: url('./images/private.svg');
+			}
+			&.shared {
+				background-image: url('./images/shared.svg');
+			}
+		}
+		.action-group {
+			width: 34px; height: 78px; position: absolute;
+			background: url('./images/action-group.svg') center center no-repeat;
+			background-size: 34px 78px; bottom: 10px; right: 10px;
+			.btn-watch {
+				width: 28px; height: 28px;position: absolute;
+				background: url('./images/btn-watch.svg') center center no-repeat;
+				background-size: 28px 28px; top: 3px; left: 3px;
+			}
+			.btn-play {
+				width: 28px; height: 28px;position: absolute;
+				background: url('./images/btn-play.svg') center center no-repeat;
+				background-size: 28px 28px; bottom: 3px; left: 3px;
+			}
+		}
+	}
+	.s-description {
+		width: 100%; padding-top: 10px;
+		.title {
+			font-family: var(--f-mainfont); font-style: normal; font-weight: 500; 
+			font-size: 17px; line-height: 25px; color: #040415; display: block;
+			margin-bottom: 5px;
+		}
+		.description {
+			font-family: var(--f-secfont); font-style: normal; font-weight: normal; 
+			font-size: 12px; line-height: 16px; color: #BCBCBC;
+		}
+	}
+
+}

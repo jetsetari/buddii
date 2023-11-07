@@ -1,0 +1,29 @@
+.question-long {
+	margin-top: 20px;
+	table tr td {
+		padding: 20px 15px 0 15px !important;
+	}
+	i {
+		font-style: italic;
+	}
+	thead {
+		padding-bottom: 15px;
+	}
+	.avatar {
+		width: 25px; height: 25px; background: #F0F0F0;
+		border-radius: 100%; flex: 0 0 45px; margin-right: 10px;
+		background-size: cover; background-position: center;
+		background-repeat: no-repeat; float: right;
+	}
+	.answer {
+		float: left; display: flex; align-items: center;
+		
+		.answer-name {
+			margin-bottom: 2px; display: block; font-size: 14px;
+			font-weight: 600;
+		}
+		.answer-client {
+			color: #B3B8BF; font-size: 12px; font-weight: 300;
+		}
+	}
+}

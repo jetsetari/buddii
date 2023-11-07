@@ -1,0 +1,78 @@
+.edit-question {
+	width: 100%; float: left;
+	.new-question {
+		float: left; width: 100%; margin-top: 20px;
+	}
+	.q-type {
+		float: left; width: 100%; margin-bottom: 10px; font-weight: 500;
+		margin-bottom: 15px;
+	}
+	.grid {
+		display: grid; grid-template-columns: 1fr 1fr;
+		grid-gap: 10px; float: left; width: 100%;
+		margin-top: 20px;
+	}
+	.answer-data {
+		float: left; width: 100%; margin-top: 10px;
+	}
+	.question-types {
+		display: grid; grid-template-columns: 1fr 1fr;
+		grid-gap: 10px; float: left; width: 100%;
+		.type {
+			background: #F3F3F3; padding: 5px; border-radius: 12px;
+			display: flex; align-items: center; height: 45px;
+			transition: all 0.5s ease; -webkit-transition: all 0.5s ease;
+			cursor: pointer;
+			span {
+				font-weight: 500; font-size: 12px;
+			}
+			&:hover {
+				background: #cffcff;
+			}
+		}
+	}
+	.option {
+		float: left; width: 100%; background: #f2f2f2; padding: 5px; 
+		margin-bottom: 5px; border-radius: 9px; display: flex; 
+		align-items: center; font-size: 12px;
+		.btn-delete {
+			margin-left: auto;
+		}
+	}
+	.add-option {
+		.input.text {
+			width: calc(100% - 105px);
+		}
+		.c-add-button {
+			margin: 30px 0 0 10px;
+		}
+	}
+	.icon {
+		float: left; width: 30px; height: 30px; margin-right: 5px;
+		background-position: center; background-repeat: no-repeat;
+		&.type-attachment {
+			background-image: url('/assets/images/question-types/attachment.svg');
+		}
+		&.type-date {
+			background-image: url('/assets/images/question-types/date.svg');
+		}
+		&.type-image {
+			background-image: url('/assets/images/question-types/image.svg');
+		}
+		&.type-long {
+			background-image: url('/assets/images/question-types/long.svg');
+		}
+		&.type-multiple {
+			background-image: url('/assets/images/question-types/multiple.svg');
+		}
+		&.type-numeric {
+			background-image: url('/assets/images/question-types/numeric.svg');
+		}
+		&.type-short {
+			background-image: url('/assets/images/question-types/short.svg');
+		}
+		&.type-single {
+			background-image: url('/assets/images/question-types/single.svg');
+		}
+	}
+}

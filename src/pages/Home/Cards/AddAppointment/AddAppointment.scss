@@ -1,0 +1,178 @@
+.add-apointment {
+	.half {
+		width: 50%; float: left; padding-left: 10px;
+	}
+	.datepicker {
+		height: 50px; width: 20%; border: none;
+		.react-date-picker__wrapper {
+			border: none;
+
+		}
+	}
+	.btn-save {
+		width: 100%; padding: 15px;
+		margin-top: 20px;
+	}
+	.react-calendar__month-view__days__day{
+		color: black;
+	}
+	.react-calendar__month-view__days__day--neighboringMonth {
+		color: lightgray;
+	}
+	.react-calendar__navigation__arrow {
+		color: var(--c-main-green);
+	}
+	.react-calendar__navigation__label {
+		color: var(--c-light-green);
+	}
+	.react-date-picker__calendar-button {
+		display: none;
+	}
+	.react-date-picker__inputGroup__input{
+		height: 40px;
+		padding: 5px;
+	}
+	.react-calendar__tile {
+		color: black;
+	}
+	.half:first-child {
+		padding-left: 0px; padding-right: 10px;
+	}
+	.Dropdown-root {
+		margin-bottom: 15px;
+	}
+	select, .time-picker__input  {
+		position: relative; overflow: hidden; background-color: #f3f5f6; 
+		border-width: 0 !important; box-sizing: border-box; outline: none; 
+		padding: 9px 10px 9px 14px; top: -8px; transition: all 200ms ease; 
+		cursor: pointer; color: var(--c-grey6) !important; margin-bottom: 0; 
+		border-radius: 9px; height: 45px; width: 100%; margin-bottom: 10px;
+	}
+	.date-select {
+		float: left; width: 75%;
+		label {
+			margin-bottom: 15px;
+		}
+	}
+	.time-select {
+		float: left; width: 25%;
+		label {
+			margin-bottom: 15px;
+		}
+	}
+	.rsd__select-container-month, 
+	.rsd__select-container-day,
+	.rsd__select-container-year {
+		padding-right: 10px;
+	}
+	.time-picker__input {
+		float: left; width: 100%; font-size: 16px;
+	}
+	hr {
+		background: #D6D6D6; height: 1px; width: 100%; margin: 25px 0;
+	}
+	.contacts {
+		float: left; margin-bottom: 20px; width: 100%;
+		.search-contact {
+			display: flex; flex-direction: row;
+			.input.search {
+				width: 100%; margin-right: 20px;
+			}
+			button {
+				width: 135px; height: 54px;
+			}
+		}
+		.contact-results {
+			float: left; width: 100%; 
+			.contact {
+				width: 100%; margin-bottom: 10px; float: left;
+				background: linear-gradient(83.59deg, #FCFCFD 36.52%, rgba(252, 252, 253, 0.83) 98.8%);
+				box-shadow: 2px 28px 54px rgba(171, 171, 180, 0.180944); border-radius: 10px;
+				display: flex; flex-direction: row; align-items: center; padding: 10px;
+				cursor: pointer;
+				.contact-image {
+					flex: 0 0 38px; border-radius: 100%; background-color: #e6e6e6; width: 38px;
+					height: 38px; background-size: cover; background-repeat: no-repeat;
+					background-position: center; margin-right: 15px;
+				}
+				.contact-name {
+					font-family: Poppins; font-style: normal; font-weight: 600; font-size: 12px; 
+					line-height: 18px; color: #11142D;
+				}
+				&.selected {
+					background: linear-gradient(83.59deg, #19CFD9 36.52%, rgba(252, 252, 253, 0.83) 98.8%);
+					.contact-name {
+						color: #FFF;
+					}
+				}
+			}
+			
+		}
+	}
+	}
+
+	.time-picker {
+		position: relative;
+	  
+		&__trigger {
+		  position: relative;
+		  height: 27px;
+		}
+	  
+		&__input {
+		  height: 27px;
+		  line-height: 27px;
+		  font-size: 13px;
+		  padding: 0 5px;
+		  box-shadow: none;
+		  color: #263238;
+		  border-radius: 2px;
+		  -webkit-appearance: none;
+		  font-family: HelveticaNeue-Regular, Helvetica, Arial, sans-serif;
+		  background-image: none;
+		  border: 1px solid #1980ec;
+		}
+	  
+		&__suggestion-list {
+		  background: #fff;
+		  border: 1px solid #ddd;
+		  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		  -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+		  outline: 0;
+		  z-index: 2099;
+		  margin: 0;
+		  font-weight: 400;
+		  line-height: 1.42857;
+		  text-align: left;
+		  overflow-y: auto;
+		  height: 150px;
+		  width: 6.5em;
+		  position: absolute;
+		  top: 100%;
+		  left: 0;
+		}
+	  
+		&__suggestion {
+		  display: block;
+		  width: 100%;
+		  text-align: left;
+		  padding: 3px 0 3px 5px;
+		  cursor: pointer;
+		  white-space: nowrap;
+		  color: #000;
+		  list-style: none;
+		  margin: 0;
+		  user-select: none;
+		  border: none;
+		  background: 0 0;
+	  
+		  &_selected,
+		  &:hover,
+		  &:focus {
+			background: #1980ec;
+			color: #fff;
+		  }
+		}
+	  }
+	  
